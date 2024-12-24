@@ -5,5 +5,22 @@
     </head>
     <body>
         <h1>halo</h1>
+        <button id="submit_button">submit</button>
+        <script>
+            document.getElementById("submit_button").addEventListener("click", () => {
+                fetch("https://alus.us.kg/api",
+                    {
+                        method: "POST",
+                        headers: {
+                            "content-type": "application/json"
+                        },
+                        body: {
+                            name: "a",
+                            secret: "b"
+                        }
+                    }
+                ).then(response => console.log(response));
+            });
+        </script>
     </body>
 </html>
