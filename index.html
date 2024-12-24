@@ -8,10 +8,11 @@
         <h1>halo</h1>
         <button id="submit_button">submit</button>
         <script>
-            data = {
+            var data = {
                 name: "a",
                 secret: "b"
-            }
+            };
+            
             document.getElementById("submit_button").addEventListener("click", () => {
                 fetch("https://alus.us.kg/api",
                     {
