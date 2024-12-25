@@ -2,11 +2,34 @@
 <html>
     <head>
         <title>alus</title>
-        <link rel="icon" sizes="32x20" href="alus.png" type="image/png">
+        <link rel="icon" sizes="32x20" href="alus_white.png" type="image/png">
+        <style>
+            html, body {
+            margin: 0;        /* 移除默認外邊距 */
+            padding: 0;       /* 移除默認內邊距 */
+            width: 100%;      /* 確保寬度填滿視窗 */
+            height: 100%;     /* 確保高度填滿視窗 */
+            overflow: hidden; /* 防止多餘滾動條 */
+            }
+            body {
+                align-items: center;
+                background-color: rgb(22, 22, 22);
+            }
+            .main_img {
+                width: 224px;
+                height: 140px;
+            }
+            .ngaayho {
+                color: white;
+                display: inline-block;
+            }
+        </style>
     </head>
     <body>
-        <h1>Nga'ay ho kiso!</h1>
-        <img src="alus.png">
+        <div>
+            <img src="alus_white.png" class="main_img">
+            <h1 class="ngaayho">Nga'ay ho kiso!</h1>
+        </div>
         <button id="submit_button">submit</button>
         <script>
             var data = {
