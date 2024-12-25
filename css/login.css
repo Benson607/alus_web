@@ -1,0 +1,16 @@
+.login_div {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+}
+
+.login_form {
+    display: inline-block;
+    margin: 10px;
+}
+
+.login_button {
+    margin: 10px;
+}
