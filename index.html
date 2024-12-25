@@ -3,54 +3,24 @@
     <head>
         <title>alus</title>
         <link rel="icon" sizes="32x20" href="alus_white.png" type="image/png">
-        <style>
-            html, body {
-            margin: 0;        /* 移除默認外邊距 */
-            padding: 0;       /* 移除默認內邊距 */
-            width: 100%;      /* 確保寬度填滿視窗 */
-            height: 100%;     /* 確保高度填滿視窗 */
-            overflow: hidden; /* 防止多餘滾動條 */
-            }
-            body {
-                align-items: center;
-                background-color: rgb(22, 22, 22);
-            }
-            .main_img {
-                width: 224px;
-                height: 140px;
-            }
-            .ngaayho {
-                color: white;
-                display: inline-block;
-            }
-        </style>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
     </head>
     <body>
         <div>
-            <img src="alus_white.png" class="main_img">
-            <h1 class="ngaayho">Nga'ay ho kiso!</h1>
+            <img id="title_icon" src="alus_white.png" class="main_img">
+            <h1 class="ngaayho">Nga'ay ho kiso! 你好!</h1>
         </div>
-        <button id="submit_button">submit</button>
-        <script>
-            var data = {
-                name: "a",
-                secret: "b"
-            };
-            
-            document.getElementById("submit_button").addEventListener("click", () => {
-                fetch("https://alus.us.kg/api/signup",
-                    {
-                        method: "POST",
-                        headers: {
-                            "content-type": "application/json"
-                        },
-                        body: JSON.stringify(data)
-                    }
-                )
-                .then(response => response.json())
-                .then(data => console.log(data))
-                .catch(error => console.error("Error:", error));
-            });
-        </script>
+        <div class="left_list">
+            <form action="this_site/index.html">
+                <button type="submit" id="about_button" class="func_button">關於本網站</button>
+            </form>
+            <form action="signup.html">
+                <button type="submit" id="to_signup_button" class="func_button">註冊</button>
+            </form>
+            <form action="login.html">
+                <button type="submit" id="to_login_button" class="func_button">登入</button>
+            </form>
+        </div>
     </body>
 </html>
