@@ -11,5 +11,50 @@
             <img id="title_icon" src="alus_white.png" class="main_img">
             <h1 class="ngaayho">log in</h1>
         </div>
+        <div class="left_list">
+            <form action="this_site/index.html">
+                <button type="submit" id="about_button" class="func_button">關於本網站</button>
+            </form>
+            <form action="signup.html">
+                <button type="submit" id="to_signup_button" class="func_button">註冊</button>
+            </form>
+            <form action="login.html">
+                <button type="submit" id="to_login_button" class="func_button">登入</button>
+            </form>
+        </div>
+        <div class="signup_div">
+            <div class="signup_form">
+                name:
+                </br>
+                password:
+            </div>
+            <div class="signup_form">
+                <input id="name_input" type="text"/>
+                </br>
+                <input id="password_input" type="password">
+            </div>
+            </br>
+            <button id="submit_button" class="signup_button">註冊</button>
+        </div>
+        <script>
+            document.getElementById("submit_button").addEventListener("click", () => {
+                var data = {
+                    name: document.getElementById("name_input").value,
+                    password: document.getElementById("password_input").value
+                };
+                fetch("https://alus.us.kg/api/login",
+                    {
+                        method: "POST",
+                        headers: {
+                            "content-type": "application/json"
+                        },
+                        body: JSON.stringify(data)
+                    }
+                )
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error("Error:", error));
+            });
+        </script>
     </body>
 </html>
