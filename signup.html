@@ -40,8 +40,8 @@
         <script>
             document.getElementById("submit_button").addEventListener("click", () => {
                 var data = {
-                    name: document.getElementById("name_input").textContent,
-                    password: document.getElementById("password_input").textContent
+                    name: document.getElementById("name_input").value,
+                    password: document.getElementById("password_input").value
                 };
                 fetch("https://alus.us.kg/api/signup",
                     {
