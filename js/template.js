@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://alus.us.kg/api/check_login", {
         method: "POST"
     }).then(response => response.json())
-    .then(data => {
+    .then(data => {/*
         if (data.msg == "logined") {
             left_list.innerHTML = ''
             +'<form action="/this_site/index.html">'
@@ -39,6 +39,27 @@ document.addEventListener("DOMContentLoaded", () => {
             +'<form action="/login.html">'
             +    '<button type="submit" id="to_login_button" class="func_button">登入</button>'
             +'</form>';
+        }*/
+        if (data.msg == "logined") {
+            left_list.innerHTML = ''
+            + "<li>"
+            + "<a href='/this_site/index.html'>關於本網站</a>"
+            + "</li>"
+            + "<li>"
+            + "<a href='/logout.html'>登出</a>"
+            + "</li>";
+        }
+        else {
+            left_list.innerHTML = ''
+            + "<li>"
+            + "<a href='/this_site/index.html'>關於本網站</a>"
+            + "</li>"
+            + "<li>"
+            + "<a href='/signup.html'>註冊</a>"
+            + "</li>"
+            + "<li>"
+            + "<a href='/login.html'>登入</a>"
+            + "</li>";
         }
     })
     .catch(err => console.error(err));
