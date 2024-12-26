@@ -12,5 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     head.appendChild(title);
     head.appendChild(icon);
-    console.log("finish");
+    
+    const left_list = document.getElementsByClassName("left_list")[0];
+    left_list.innerHTML = ''
+            +'<form action="/index.html">'
+            +    '<button type="submit" id="about_button" class="func_button">關於本網站</button>'
+            +'</form>'
+            +'<form action="/signup.html">'
+            +    '<button type="submit" id="to_signup_button" class="func_button">註冊</button>'
+            +'</form>'
+            +'<form action="/login.html">'
+            +    '<button type="submit" id="to_login_button" class="func_button">登入</button>'
+            +'</form>';
 })
