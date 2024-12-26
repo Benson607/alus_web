@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         method: "POST"
     }).then(response => response.json())
     .then(data => {
-        if (data.msg == "loged") {
+        if (data.msg == "logined") {
             left_list.innerHTML = ''
             +'<form action="/this_site/index.html">'
             +    '<button type="submit" id="about_button" class="func_button">關於本網站</button>'
