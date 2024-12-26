@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     var icon = document.createElement("link");
     icon.rel = "icon";
     icon.sizes="32x20";
-    icon.href="/alus_white.png";
+    icon.href="/alus_white_square.png";
     icon.type="image/png";
 
     head.appendChild(title);
