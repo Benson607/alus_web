@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const left_list = document.getElementsByClassName("left_list")[0];
     left_list.innerHTML = ''
-            +'<form action="/index.html">'
+            +'<form action="/this_site/index.html">'
             +    '<button type="submit" id="about_button" class="func_button">關於本網站</button>'
             +'</form>'
             +'<form action="/signup.html">'
