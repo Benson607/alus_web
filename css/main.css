@@ -26,6 +26,11 @@ body {
     display: inline-block;
 }
 
+.left_button {
+    color: white;
+    text-decoration: none;
+}
+
 .func_button {
     margin: 5px;
 }
