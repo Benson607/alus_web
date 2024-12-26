@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://alus.us.kg/api/check_login", {
         method: "POST"
     }).then(response => response.json())
-    .then(data => () => {
+    .then(data => {
         if (data.msg == "loged") {
             left_list.innerHTML = ''
             +'<form action="/this_site/index.html">'
