@@ -14,7 +14,22 @@ document.addEventListener("DOMContentLoaded", () => {
     head.appendChild(icon);
     
     const left_list = document.getElementsByClassName("left_list")[0];
-    left_list.innerHTML = ''
+
+    fetch("https://alus.us.kg/api/check_login", {
+        method: "POST"
+    }).then(response => response.json())
+    .then(data => () => {
+        if (data.msg == "loged") {
+            left_list.innerHTML = ''
+            +'<form action="/this_site/index.html">'
+            +    '<button type="submit" id="about_button" class="func_button">關於本網站</button>'
+            +'</form>'
+            +'<form action="/login.html">'
+            +    '<button type="submit" id="to_login_button" class="func_button">登入</button>'
+            +'</form>';
+        }
+        else {
+            left_list.innerHTML = ''
             +'<form action="/this_site/index.html">'
             +    '<button type="submit" id="about_button" class="func_button">關於本網站</button>'
             +'</form>'
@@ -24,4 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
             +'<form action="/login.html">'
             +    '<button type="submit" id="to_login_button" class="func_button">登入</button>'
             +'</form>';
+        }
+    })
+    .catch(err => console.log(err));
 })
