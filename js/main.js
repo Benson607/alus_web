@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         + "</br>"
         + "<button id='yes'>確定</button>"
         + "</br>"
-        + "<button id='no'>取消</button>"
+        + "<button id='no'>取消</button>";
         document.body.appendChild(logout_dialog);
         document.getElementById("yes").addEventListener("click", logout);
     });
