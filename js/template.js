@@ -71,9 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
             + "<a class='left_button' href='/login.html'>登入</a>"
             + "</li>"
             + "<li style='display: none'>"
-            + "<a id='logout_button' class='left_button' onclick='open_logout_dialog()'>登出</a>"
+            + "<a id='logout_button' class='left_button'>登出</a>"
             + "</li>";
         }
+
+        document.getElementById("logout_button").addEventListener("click", open_logout_dialog);
     })
     .catch(err => console.error(err));
 })
