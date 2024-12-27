@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             + "<a class='left_button' href='/this_site/index.html'>關於本網站</a>"
             + "</li>"
             + "<li>"
-            + "<a class='left_button' href='/logout.html'>登出</a>"
+            + "<a id='logout_button' class='left_button'>登出</a>"
             + "</li>";
         }
         else {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             + "<a class='left_button' href='/login.html'>登入</a>"
             + "</li>"
             + "<li style='display: none'>"
-            + "<a id='logout_button' class='left_button' href='/logout.html'>登出</a>"
+            + "<a id='logout_button' class='left_button'>登出</a>"
             + "</li>";
         }
     })
