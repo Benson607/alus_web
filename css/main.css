@@ -34,3 +34,17 @@ body {
 .func_button {
     margin: 5px;
 }
+
+.logout_div {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+}
+
+.mask {
+    color: gray;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}

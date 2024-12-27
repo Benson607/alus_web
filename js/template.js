@@ -38,6 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
             + "</li>"
             + "<li>"
             + "<a class='left_button' href='/login.html'>登入</a>"
+            + "</li>"
+            + "<li style='display: none'>"
+            + "<a id='logout_button' class='left_button' href='/logout.html'>登出</a>"
             + "</li>";
         }
     })
