@@ -54,10 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
             left_list.innerHTML = ''
             + "<li>"
             + "<a id='logout_button' class='left_button'>登出</a>"
-            + "</li>";
+            + "</li>"
             + "<li>"
             + "<a class='left_button' href='/this_site/index.html'>關於本網站</a>"
-            + "</li>"
+            + "</li>";
         }
         else {
             left_list.innerHTML = ''
@@ -69,10 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
             + "</li>"
             + "<li style='display: none'>"
             + "<a id='logout_button' class='left_button'>登出</a>"
-            + "</li>";
+            + "</li>"
             + "<li>"
             + "<a class='left_button' href='/this_site/index.html'>關於本網站</a>"
-            + "</li>"
+            + "</li>";
         }
 
         document.getElementById("logout_button").addEventListener("click", open_logout_dialog);
