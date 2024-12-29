@@ -24,6 +24,7 @@ body {
 .left_list {
     margin: 20px;
     display: inline-block;
+    color: white;
 }
 
 .left_button {

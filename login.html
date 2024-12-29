@@ -45,7 +45,12 @@
                     }
                 )
                 .then(response => response.json())
-                .then(data => console.log(data))
+                .then(data => {
+                    console.log(data);
+                    if (data.msg == "sucess") {
+                        window.location.href = "/index.html";
+                    }
+                })
                 .catch(error => console.error("Error:", error));
             });
         </script>
