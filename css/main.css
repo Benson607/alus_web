@@ -37,9 +37,10 @@ body {
 }
 
 .logout_div {
+    color: white;
     position: absolute;
-    width: 600px;
-    height: 300px;
+    display: inline-block;
+    left: 40%;
 }
 
 .mask {
