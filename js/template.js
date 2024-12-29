@@ -53,17 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
         if (data.msg == "logined") {
             left_list.innerHTML = ''
             + "<li>"
-            + "<a class='left_button' href='/this_site/index.html'>關於本網站</a>"
-            + "</li>"
-            + "<li>"
             + "<a id='logout_button' class='left_button'>登出</a>"
             + "</li>";
+            + "<li>"
+            + "<a class='left_button' href='/this_site/index.html'>關於本網站</a>"
+            + "</li>"
         }
         else {
             left_list.innerHTML = ''
-            + "<li>"
-            + "<a class='left_button' href='/this_site/index.html'>關於本網站</a>"
-            + "</li>"
             + "<li>"
             + "<a class='left_button' href='/signup.html'>註冊</a>"
             + "</li>"
@@ -73,6 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
             + "<li style='display: none'>"
             + "<a id='logout_button' class='left_button'>登出</a>"
             + "</li>";
+            + "<li>"
+            + "<a class='left_button' href='/this_site/index.html'>關於本網站</a>"
+            + "</li>"
         }
 
         document.getElementById("logout_button").addEventListener("click", open_logout_dialog);
