@@ -50,6 +50,14 @@
                     if (data.msg == "sucess") {
                         window.location.href = "/index.html";
                     }
+                    else {
+                        var login_div = document.getElementsByClassName("login_div")[0];
+                        var err = document.createElement("div");
+                        err.style = "color: white;";
+                        err.innerHTML = "</br>"
+                        + "帳號或密碼錯誤";
+                        login_div.appendChild(err);
+                    }
                 })
                 .catch(error => console.error("Error:", error));
             });
