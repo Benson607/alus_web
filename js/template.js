@@ -1,8 +1,10 @@
 function logout() {
     fetch("https://alus.us.kg/api/logout", {
         method: "POST"
+    })
+    .then(data => {
+        window.location.href = "/index.html";
     });
-    window.location.href = "/index.html";
 }
 
 function cancel_logout() {
