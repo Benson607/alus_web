@@ -32,7 +32,8 @@ function open_logout_dialog() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    var wait_rotation = document.createElement("div");
+    var wait_rotation = document.createElement("img");
+    wait_rotation.src = "/alus_circle.png";
     wait_rotation.className = "rotation";
 
     const head = document.getElementsByTagName("head")[0];

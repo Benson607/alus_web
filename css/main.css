@@ -63,7 +63,7 @@ body {
 .rotation {
     width: 100px;
     height: 100px;
-    background-color: white;
-    border-radius: 50%; /* 圓形 */
     animation: spin 2s linear infinite; /* 2秒一圈，線性匀速，無限次數 */
+    position: absolute;
+    left: 46%
 }
