@@ -32,7 +32,12 @@ function open_logout_dialog() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    var wait_rotation = document.createElement("div");
+    wait_rotation.className = "rotation";
+
     const head = document.getElementsByTagName("head")[0];
+
+    document.body.appendChild(wait_rotation);
     
     var title = document.createElement("title");
     title.textContent="alus";

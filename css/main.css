@@ -1,8 +1,8 @@
 html, body {
-    margin: 0;        /* 移除默認外邊距 */
-    padding: 0;       /* 移除默認內邊距 */
-    width: 100%;      /* 確保寬度填滿視窗 */
-    height: 100%;     /* 確保高度填滿視窗 */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden; /* 防止多餘滾動條 */
 }
 
@@ -49,4 +49,21 @@ body {
     height: 100%;
     position: absolute;
     top: 0px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotation {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%; /* 圓形 */
+    animation: spin 2s linear infinite; /* 2秒一圈，線性匀速，無限次數 */
 }
