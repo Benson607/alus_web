@@ -85,5 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.getElementById("logout_button").addEventListener("click", open_logout_dialog);
     })
+    .then(data => {
+        wait_rotation.remove();
+    })
     .catch(err => console.error(err));
 })
